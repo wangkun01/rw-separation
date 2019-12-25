@@ -1,0 +1,5 @@
+1.自定义的数据源配置类 内部持有了主库和从库的数据源
+2.aop-->DBContextHolder  aop中指定了DBTypeEnum枚举类是走master还是slave
+3.MyRoutingDataSource extends AbstractRoutingDataSource 的determineCurrentLookupKey方法
+return DBContextHolder.get();
+根据key获取数据源

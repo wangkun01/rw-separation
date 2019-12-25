@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    master:
+      jdbc-url: jdbc:mysql://localhost:3306/User?serverTimezone=GMT%2b8&autoReconnect=true&useUnicode=true&characterEncoding=utf-8&autocommit=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave1:
+      jdbc-url: jdbc:mysql://localhost:3306/Order?serverTimezone=GMT%2b8&autoReconnect=true&useUnicode=true&characterEncoding=utf-8&autocommit=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+    level:
+        cn.enjoyedu.rwseparation: DEBUG
+    root: INFO
